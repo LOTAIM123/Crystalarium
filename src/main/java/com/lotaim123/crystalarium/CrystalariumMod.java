@@ -30,6 +30,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import static com.lotaim123.crystalarium.Item.ModItems.REFINED_AMETHYST;
 import static com.lotaim123.crystalarium.block.ModBlocks.CRYSTALARIUM;
 import static net.minecraft.world.item.Items.AMETHYST_CLUSTER;
 import static net.minecraft.world.item.Items.BUDDING_AMETHYST;
@@ -65,7 +66,7 @@ public class CrystalariumMod {
             .icon(() -> new ItemStack(AMETHYST_CLUSTER))
             .displayItems((parameters, output) -> {
                 output.accept(AMETHYST_CLUSTER); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-                output.accept(CRYSTALARIUM.get());
+                output.accept(REFINED_AMETHYST.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
